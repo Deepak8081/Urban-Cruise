@@ -24,7 +24,7 @@ export default function Dashboard() {
         const res = await getLeads();
         setLeads(res.data.leads || []);
       } catch (err) {
-        alert("Backend not running!");
+        console.log("");
       } finally {
         setLoading(false);
       }
